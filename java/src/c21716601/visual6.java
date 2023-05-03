@@ -13,10 +13,6 @@ public class visual6 {
     private int lastHoopTime = 0;
     private int hoopInterval = 1000; // 1 second interval
     private int currentHoop = 0;
-    float[] starSizes = new float[30];
-    float[] starOpacities = new float[30];
-    float[] starFades = new float[30];
-    boolean[] starActive = new boolean[30];
 
     public visual6(rockstar rs) {
         this.rs = rs;
@@ -29,11 +25,11 @@ public class visual6 {
     public void render() {
 
         rs.background(0);
-        angle += 1.0; // Increment the angle by a small amount
+        angle += 0.5; // Increment the angle by a small amount
         rs.camera(-1800, -1800, 0, 0, 0, 0, 1, 0, 0);
 
         rs.pushMatrix();
-        rs.translate(400, 400);
+        rs.translate(700, 700);
         rs.rotateX(angle);
         float amplitude = rs.getSmoothedAmplitude();
 
@@ -94,7 +90,6 @@ public class visual6 {
             rs.ellipse(rs.width / 2, rs.height / 2, newHoopSizes[i], newHoopSizes[i]);
         }
         rs.popMatrix();
-
 
     }
 }
