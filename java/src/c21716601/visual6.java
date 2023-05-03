@@ -25,7 +25,7 @@ public class visual6 {
     public void render() {
 
         rs.background(0);
-        angle += 1.0; // Increment the angle by a small amount
+        angle += 0.01; // Increment the angle by a small amount
         rs.camera(-1800, -1800, 0, 0, 0, 0, 1, 0, 0);
 
         rs.pushMatrix();
