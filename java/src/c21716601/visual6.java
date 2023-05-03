@@ -11,7 +11,7 @@ public class visual6 {
     private float[] newHoopSizes = { 5.0f, 5.0f, 5.0f, 5.0f, 5.0f }; // starting size at 5 pixels for the 5 new hoops
     private float[] newHoopOpacities = { 0.0f, 0.0f, 0.0f, 0.0f, 0.0f };
     private int lastHoopTime = 0;
-    private int hoopInterval = 1000; // 1 second interval
+    private int hoopInterval = 3000; // 1 second interval
     private int currentHoop = 0;
 
     public visual6(rockstar rs) {
