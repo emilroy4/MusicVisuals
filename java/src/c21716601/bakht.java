@@ -37,7 +37,7 @@ if (bakht.frameCount % 120 < 60) {
  
 }
 
-// draw the circles
+// draw the  white rotating circles
 bakht.noFill();
 bakht.camera(0, 100, 200, 0, 0, 0, 1, 0, 0);
 bakht.translate(0, 0, 0);

@@ -23,7 +23,7 @@ public class rockstar extends Visual {
     public void setup() {
         startMinim(); // Start the Minim audio library
 
-        loadAudio("immortal.mp3"); // Load an audio file named "immortal.mp3"
+        loadAudio("audio.mp3"); // Load an audio file named "immortal.mp3"
 
         // Initialize the various objects
         er = new emil(this);
@@ -88,15 +88,17 @@ public class rockstar extends Visual {
 
             case 4: {
 
-                visual6.render(); // Render the "visual6" visual effect
+               // visual6.render(); // Render the "visual6" visual effect
+               us1.render();// render the "us1" visual effect
+               us.render();// render the "us" visual effect
 
                 break;
             }
 
             case 5: {
 
-                us1.render();// render the "us1" visual effect
-                us.render();// render the "us" visual effect
+               // us1.render();// render the "us1" visual effect
+                //us.render();// render the "us" visual effect
 
                 break;
             }

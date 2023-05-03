@@ -22,11 +22,11 @@ public class nico {
         float currentTime = nico.millis();
         
         if (currentTime % interval < interval / 2) {
-            nico.fill(102, 0, 102); // set the fill color to dark purple
-            nico.stroke(137, 207, 240); // set stroke baby blue
+            nico.fill(255); // set the fill color to white
+            nico.stroke(255, 0, 0); // set stroke to red
         } else {
-          nico.fill(137, 207, 240); // set the fill color to baby blue
-          nico.stroke(102, 0, 102); // set stroke dark purple
+          nico.fill(255, 0, 0); // set the fill color to red
+          nico.stroke(255); // set stroke white
         }
 
         nico.strokeWeight(5); // set the stroke thickness to 5 pixels
@@ -61,8 +61,8 @@ public class nico {
 
         nico.pushMatrix();
         nico.translate(0, 0, 0); // move the sphere to the center of the screen
-        nico.fill(137, 207, 240); // set the fill color to baby blue
-        nico.stroke(102, 0, 102); // set stroke dark purple
+        nico.fill(255, 0, 0); // set the fill color to red
+        nico.stroke(255); // set stroke white
         nico.sphere(size); // draw a sphere with a diameter of 'size'
         nico.popMatrix();
 
@@ -78,7 +78,7 @@ public class nico {
     public void shootingStars() {
         nico.randomSeed(1);
         for (int i = 0; i < 100; i++) {
-            nico.stroke(137, 207, 240); // set the stroke color to baby blue
+            nico.stroke(255, 0 ,0); // set the stroke color to red
             nico.strokeWeight(nico.random(2, 5)); // set a random stroke weight between 2 and 5 pixels
             nico.point(nico.random(-width / 2, width / 2), nico.random(-height / 2, height / 2),
                     nico.random(-500, 500));
