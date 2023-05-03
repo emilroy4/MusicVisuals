@@ -10,9 +10,9 @@ public class bakht {
         this.bakht = bakht;
     }
 
-    public void render() {
+    public void render() { 
 
-  // set background color
+  // set background color and change 
   if (bakht.frameCount % 120 < 60) {
     bakht.background(100, 0, 0); // dark red
   } else {
